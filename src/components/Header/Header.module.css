@@ -1,8 +1,98 @@
 .header {
   background-color: var(--color-black);
-  padding: 10px 20px;
-  border-bottom: 1px solid #eee;
+  padding: 0px 20px;
   font-family: var(--font-heading);
+  display: flex;
+  flex-direction: column;
+}
+.topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topRow p {
+  margin: 0;
+  font-size: 35px;
+  color: var(--color-cream);
+}
+
+.searchInput {
+  width: 50%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #0066cc;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+.searchInput::placeholder {
+  color: #999999;
+  font-style: italic;
+  opacity: 1;
+}
+
+.accountButton {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--color-cream);
+  background-color: #cccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cartButton {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--color-cream);
+  background-color: #009e2a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.categoryRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.filterButton {
+  padding: 12px 0px;
+  font-size: 16px;
+  color: var(--color-cream);
+  background-color: var(--color-black);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1;
+  border-right: 1px solid var(--color-cream);
+}
+
+.filterButton:last-child {
+  border-right: none;
+}
+
+.filterButton:hover {
+  background-color: var(--color-cream);
+  transform: scale(1);
+  color: var(--color-black);
 }
 
 .header h1 {
